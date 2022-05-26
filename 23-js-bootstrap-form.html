@@ -107,6 +107,7 @@
                   
 
             </div>
+            
             <div class="col-sm-6">
                 <div class="card " style="width: 20rem; height: 30rem;">
                     <div class="alert alert-primary" role="alert">
@@ -120,8 +121,12 @@
                        
                         <div type="text" class="alert alert-success" role="alert"  id="AID">
                              <script>
+                               let i = "รหัส : "
+                               let fname = "ชื่อ - สกุล : "
+                               let phoneN = "เบอร์โทรศัพท์ : "
                           function show(){
-                            document.getElementById('AID').innerHTML =
+                            document.getElementById('AID').innerHTML = 
+                            i+
                             document.getElementById('formGroupExampleInput').value
                           }
                         </script>
@@ -132,6 +137,7 @@
                           <script>
                             function show1(){
                               document.getElementById('AName').innerHTML =
+                              fname +
                               document.getElementById('formGroupExampleInput2').value
                             }
                           </script>
@@ -142,6 +148,7 @@
                           <script>
                             function show2(){
                               document.getElementById('APhone').innerHTML =
+                              phoneN +
                               document.getElementById('formGroupExampleInput3').value
                             }
                           </script>
